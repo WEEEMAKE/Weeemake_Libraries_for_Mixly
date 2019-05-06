@@ -337,7 +337,7 @@
 		</category>
 	</category>
 
-	<category id="Comulication_Class" name="通信类" colour="120">
+	<category id="Communication_Class" name="通信类" colour="120">
 		<category id="wm_elfmini_IR_Sensor" name="红外接收传感器" colour="20">
 			<block type="wm_elfmini_ir_loop"></block>
 			<block type="wm_elfmini_ir"></block>
