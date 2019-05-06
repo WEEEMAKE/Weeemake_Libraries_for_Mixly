@@ -11,14 +11,11 @@ var WM_SENSOR = "#25B7DB";
 var WM_CONTROL = "#B9D01E";
 var WM_COMMUNICATION = "#46A5D3";
 
-
-var WEEEMAKE_MAIN_CONTROL_BOARD=[["ELF_MEGA-328P", "1"],["ELF_MEGA-2560", "2"],["ELF_MINI", "3"]];
 var WEEEMAKE_PORTS =[["PORT_A", "PORT_A"],["PORT_B", "PORT_B"],["PORT_C", "PORT_C"],["PORT_D", "PORT_D"]];
 var WEEEMAKE_MOTORS=[["M1", "M1"],["M2", "M2"]];
 var WEEEMAKE_SLOTS=[["SLOT1", "1"],["SLOT2", "2"]];
 var WEEEMAKE_UNIT=[["cm", "Cm"],["inch", "Inch"]];
 var WEEEMAKE_ISON=[["On", "On"],["Off", "Off"]];
-
 
 //Single LED Module
 Blockly.Blocks.wm_elfmini_single_led = {
