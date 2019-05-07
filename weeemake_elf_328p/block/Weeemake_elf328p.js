@@ -25,11 +25,11 @@ Blockly.Blocks.wm_elf328p_single_led = {
     this.appendDummyInput("")
         .appendField("单色LED灯模块")
         .appendField(new Blockly.FieldDropdown(WEEEMAKE_PORTS), "PIN")
-		.appendField(Blockly.WEEEMAKE_SINGLE_LED_SET)
+		.appendField('设置为')
         .appendField(new Blockly.FieldDropdown([[Blockly.MIXLY_ON, "openLED"], [Blockly.MIXLY_OFF, "closeLED"]]), "STAT");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setTooltip(Blockly.WEEEMAKE_SINGLE_LED_TOOLTIP);
+    this.setTooltip('');
   }
 };
 
@@ -53,7 +53,7 @@ Blockly.Blocks.wm_elf328p_buzzer_play_beat_ob = {
         .appendField(new Blockly.FieldDropdown(WEEEMAKE_BEAT), "BEAT");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setTooltip(Blockly.WEEEMAKE_SINGLE_LED_TOOLTIP);
+    this.setTooltip('');
   }
 };
 
@@ -72,7 +72,7 @@ Blockly.Blocks.wm_elf328p_buzzer_play_pitch_ob = {
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setTooltip(Blockly.WEEEMAKE_SINGLE_LED_TOOLTIP);
+    this.setTooltip('');
   }
 };
 

@@ -1,10 +1,10 @@
 <!-- type="company" 
-	 block="block/Weeemake.js" 
-	 generator="generator/Weeemake.js"  
+	 block="block/Weeemake_elf328p.js" 
+	 generator="generator/Weeemake_elf328p.js"  
 	 lib="Weeemake" media="media/Weeemake" 
 	 language="language/Weeemake" -->
-<script type="text/javascript" src="../../blocks/company/Weeemake.js"></script>
-<script type="text/javascript" src="../../generators/arduino/company/Weeemake.js"></script>
+<script type="text/javascript" src="../../blocks/company/Weeemake_elf328p.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/Weeemake_elf328p.js"></script>
 <category id="Weeemake_ELF" name="Weeemake(ELF328P)" colour="120">
 	<category id="Execution_Class" name="执行类" colour="120">
 		<category id="WM_Buzzer_Module" name="蜂鸣器模块" colour="20">
