@@ -1,0 +1,408 @@
+<!-- type="company" 
+	 block="block/Weeemake.js" 
+	 generator="generator/Weeemake.js"  
+	 lib="Weeemake" media="media/Weeemake" 
+	 language="language/Weeemake" -->
+<script type="text/javascript" src="../../blocks/company/Weeemake.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/Weeemake.js"></script>
+<category id="Weeemake_ELF" name="Weeemake(ELF328P)" colour="120">
+	<category id="Execution_Class" name="执行类" colour="120">
+		<category id="WM_Buzzer_Module" name="蜂鸣器模块" colour="20">
+			<block type="wm_elf328p_buzzer_play_beat_ob"></block>
+			<block type="wm_elf328p_buzzer_play_pitch_ob">
+				<value name="FREQUENCY">
+			  		<shadow type="math_number"></shadow>
+				</value>
+				<value name="DURATION">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			</block>
+		</category>
+		<category id="wm_elf328p_Motors" name="电机/舵机" colour="20">
+			<block type="wm_elf328p_dc_motors">
+				<value name="SPEED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_servos">
+				<value name="DEGREE">
+			  		<shadow type="math_number"></shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_130_dc_motor">
+				<value name="SPEED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_encoder_motor_run">
+				<value name="SPEED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_encoder_motor_runSpeed">
+				<value name="SPEED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_encoder_motor_move">
+				<value name="SPEED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+				<value name="POSITION">
+			  		<shadow type="math_number"></shadow>
+				</value>
+			</block>
+			<!-- <block type="wm_elf328p_stepper_motor_move">
+				<value name="SPEED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_stepper_motor_moveTo">
+				<value name="SPEED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+				<value name="POSITION">
+			  		<shadow type="math_number"></shadow>
+				</value>
+			</block> -->
+		</category>
+		<category id="wm_elf328p_MP3_Module" name="MP3模块" colour="20">
+			<block type="wm_elf328p_mp3_module_set_device"></block>
+			<block type="wm_elf328p_mp3_module_set_volume">
+				<value name="VOLUME">
+			  		<shadow type="math_number">
+			  			<field name="NUM">20</field>
+			  		</shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_mp3_module_set_music">
+				<value name="NUMBER">
+			  		<shadow type="math_number">
+			  			<field name="NUM">1</field>
+			  		</shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_mp3_module_play"></block>
+			<block type="wm_elf328p_mp3_module_pause"></block>
+			<block type="wm_elf328p_mp3_module_prev"></block>
+			<block type="wm_elf328p_mp3_module_next"></block>
+			<block type="wm_elf328p_mp3_module_music_is_over"></block>
+		</category>
+		<category id="wm_elf328p_WaterAtomizer_Module" name="雾化器模块" colour="20">
+			<block type="wm_elf328p_water_atomizer_set"></block>
+		</category>
+		<category id="wm_elf328p_Relay_Module" name="继电器模块" colour="20">
+			<block type="wm_elf328p_relay_module_set"></block>
+		</category>
+	</category>
+
+	<category id="Display_Class" name="显示类" colour="120">
+		<category id="WM_SingleLED_Module" name="单色LED灯" colour="20">
+			<block type="wm_elf328p_single_led"></block>
+		</category>
+		<category id="wm_elf328p_RGBLED_Module" name="RGB灯模块/灯带" colour="20">
+			<block type="wm_elf328p_rgb_on_board_1"></block>
+			<block type="wm_elf328p_rgb_on_board">
+				<value name="RED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+				<value name="GREEN">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			  	<value name="BLUE">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			</block>
+			<block type="wm_elf328p_rgb_ring_1">
+				<value name="PIXEL">
+			  		<shadow type="math_number"></shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_rgb_ring">
+				<value name="PIXEL">
+			  		<shadow type="math_number"></shadow>
+				</value>
+				<value name="RED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+				<value name="GREEN">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			  	<value name="BLUE">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			</block>
+			<block type="wm_elf328p_rgb_rj_1">
+				<value name="PIXEL">
+			  		<shadow type="math_number"></shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_rgb_rj">
+				<value name="PIXEL">
+			  		<shadow type="math_number"></shadow>
+				</value>
+				<value name="RED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+				<value name="GREEN">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			  	<value name="BLUE">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			</block>
+			<block type="wm_elf328p_rgb_strip_1">
+				<value name="PIXEL">
+			  		<shadow type="math_number"></shadow>
+				</value>		
+			</block>
+			<block type="wm_elf328p_rgb_strip">
+				<value name="PIXEL">
+			  		<shadow type="math_number"></shadow>
+				</value>
+				<value name="RED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+				<value name="GREEN">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			  	<value name="BLUE">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			</block>
+		</category>
+		<category id="wm_elf328p_LEDPanel_Module" name="LED表情面板" colour="20">
+			<block type="wm_elf328p_led_matrix_set_brightness"></block>
+			<block type="wm_elf328p_led_matrix_show_pixel">
+				<value name="X_AXIS">
+			  		<shadow type="math_number">
+			  			<field name="NUM">0</field>
+			  		</shadow>
+				</value>
+				<value name="Y_AXIS">
+			  		<shadow type="math_number">
+			  			<field name="NUM">0</field>
+			  		</shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_led_matrix_show_number">
+				<value name="NUMBER">
+					<shadow type="math_number">
+						<field name="NUM">100</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_led_matrix_show_clock">
+				<value name="HOUR">
+			  		<shadow type="math_number">
+			  			<field name="NUM">19</field>
+			  		</shadow>
+				</value>
+				<value name="MINUTE">
+			  		<shadow type="math_number">
+			  			<field name="NUM">19</field>
+			  		</shadow>
+			  	</value>
+			</block>
+			<block type="wm_elf328p_led_matrix_show_string">
+				<value name="X_AXIS">
+			  		<shadow type="math_number">
+			  			<field name="NUM">0</field>
+			  		</shadow>
+				</value>
+				<value name="Y_AXIS">
+			  		<shadow type="math_number">
+			  			<field name="NUM">0</field>
+			  		</shadow>
+				</value>
+				<value name="TEXT">
+					<block type="text">
+						<field name="TEXT">WMZX</field>
+					</block>
+				</value>
+			</block>
+			<block type="wm_elf328p_led_matrix_show_bitmap">
+				<value name="X_AXIS">
+			  		<shadow type="math_number">
+			  			<field name="NUM">0</field>
+			  		</shadow>
+				</value>
+				<value name="Y_AXIS">
+			  		<shadow type="math_number">
+			  			<field name="NUM">0</field>
+			  		</shadow>
+				</value>
+				<value name="Chars">
+			  		<block type="wm_elf328p_led_matrix_bitmap_default_721"></block>
+				</value>
+			</block>
+			<block type="wm_elf328p_led_matrix_bitmap_default_514"></block>
+			<block type="wm_elf328p_led_matrix_bitmap_default_721"></block>
+			<block type="wm_elf328p_led_matrix_bitmap_5x14"></block>
+			<block type="wm_elf328p_led_matrix_bitmap_7x21"></block>
+			<block type="wm_elf328p_led_matrix_clear"></block>
+		</category>
+		<category id="wm_elf328p_7SegmentDisplay_Module" name="数码管模块" colour="20">
+			<block type="wm_elf328p_seven_segment_display_show_number">
+				<value name="NUMBER">
+			  		<shadow type="math_number">
+			  			<field name="NUM">100</field>
+			  		</shadow>
+				</value>
+			</block>
+		</category>
+		<category id="wm_elf328p_OLED_Display" name="OLED显示屏" colour="20">
+			<block type="wm_elf328p_oled_display_set_char_size"></block>
+			<block type="wm_elf328p_oled_display_show_string">
+				<value name="X_AXIS">
+			  		<shadow type="math_number">
+			  			<field name="NUM">0</field>
+			  		</shadow>
+				</value>
+				<value name="Y_AXIS">
+			  		<shadow type="math_number">
+			  			<field name="NUM">0</field>
+			  		</shadow>
+				</value>
+				<value name="TEXT">
+					<block type="text">
+						<field name="TEXT">Weeemake Co., Ltd.</field>
+					</block>
+				</value>
+			</block>
+			<block type="wm_elf328p_oled_display_show_number">
+				<value name="X_AXIS">
+			  		<shadow type="math_number">
+			  			<field name="NUM">0</field>
+			  		</shadow>
+				</value>
+				<value name="Y_AXIS">
+			  		<shadow type="math_number">
+			  			<field name="NUM">0</field>
+			  		</shadow>
+				</value>
+				<value name="NUMBER">
+			  		<shadow type="math_number">
+			  			<field name="NUM">0</field>
+			  		</shadow>
+				</value>
+			</block>
+			<block type="wm_elf328p_oled_display_clear"></block>
+		</category>
+	</category>
+
+	<category id="Sensors_Class" name="传感类" colour="120">
+		<category id="wm_elf328p_Sound_Sensor" name="声音传感器" colour="20">
+			<block type="wm_elf328p_sound_sensor"></block>
+		</category>
+		<category id="wm_elf328p_Light_Sensor" name="光线传感器" colour="20">
+			<block type="wm_elf328p_light_sensor"></block>
+		</category>
+		<category id="wm_elf328p_RGBUltrasonic_Sensor" name="RGB超声波传感器" colour="20">
+			<block type="wm_elf328p_ultrasonic_distance"></block>
+			<block type="wm_elf328p_ultrasonic_rgb"></block>
+			<block type="wm_elf328p_ultrasonic_rgb_1">
+				<value name="RED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+				<value name="GREEN">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			  	<value name="BLUE">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			</block>
+			<block type="wm_elf328p_ultrasonic_led"></block>
+		</category>
+		<category id="wm_elf328p_IRAvoid_Sensor" name="红外避障传感器" colour="20">
+			<block type="wm_elf328p_ir_avoid_isObstacle"></block>
+			<block type="wm_elf328p_ir_avoid_rgb"></block>
+			<block type="wm_elf328p_ir_avoid_rgb_1">
+				<value name="RED">
+			  		<shadow type="math_number"></shadow>
+				</value>
+				<value name="GREEN">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			  	<value name="BLUE">
+			  		<shadow type="math_number"></shadow>
+			  	</value>
+			</block>
+			<block type="wm_elf328p_ir_avoid_led"></block>
+		</category>
+		<category id="wm_elf328p_Linefollower_Sensor" name="巡线传感器" colour="20">
+			<block type="wm_elf328p_linefollower_sensor"></block>
+			<block type="wm_elf328p_single_linefollower_sensor"></block>
+			<!-- <block type="wm_elf328p_led_linefollower_sensor"></block> -->
+		</category>
+		<category id="wm_elf328p_Humiture_Sensor" name="温度/温湿度传感器" colour="20">
+			<block type="wm_elf328p_ds18b20_get_value"></block>
+			<block type="wm_elf328p_humiture_get_value"></block>
+		</category>
+		<category id="wm_elf328p_TiltSwitch_Sensor" name="倾斜开关传感器" colour="20">
+			<block type="wm_elf328p_tilt_switch_sensor_get_value"></block>
+		</category>
+		<category id="wm_elf328p_Flame_Sensor" name="火焰传感器" colour="20">
+			<block type="wm_elf328p_flame_sensor_get_value"></block>
+		</category>
+		<category id="wm_elf328p_Gas_Sensor" name="可燃气体传感器" colour="20">
+			<block type="wm_elf328p_gas_sensor_get_value"></block>
+		</category>
+		<category id="wm_elf328p_PIR_Sensor" name="人体红外传感器" colour="20">
+			<block type="wm_elf328p_pir_sensor_get_value"></block>
+		</category>
+		<category id="wm_elf328p_Color_Sensor" name="颜色识别传感器" colour="20">
+			<block type="wm_elf328p_color_sensor_set"></block>
+			<block type="wm_elf328p_color_sensor_wb"></block>
+			<block type="wm_elf328p_color_sensor_get_value"></block>
+		</category>
+		<category id="wm_elf328p_Gyro_Sensor" name="陀螺仪传感器" colour="20">
+			<block type="wm_elf328p_gyro_sensor_get_gyration"></block>
+			<block type="wm_elf328p_gyro_sensor_get_aacceleration"></block>
+		</category>
+		<category id="wm_elf328p_Compass_Sensor" name="电子指南针传感器" colour="20">
+			<block type="wm_elf328p_compass_sensor_get_value"></block>
+		</category>
+		<category id="wm_elf328p_PM25_Sensor" name="PM2.5传感器" colour="20">
+			<block type="wm_elf328p_pm25_sensor_set_mode"></block>
+			<block type="wm_elf328p_pm25_sensor_get_value"></block>
+			<block type="wm_elf328p_pm25_sensor_get_value_1"></block>
+		</category>
+		<category id="wm_elf328p_Water_Sensor" name="雨滴传感器" colour="20">
+			<block type="wm_elf328p_water_sensor_get_value"></block>
+		</category>
+		<category id="wm_elf328p_Barometer_Sensor" name="气压传感器" colour="20">
+			<block type="wm_elf328p_barometer_sensor_get_value"></block>
+		</category>
+		<category id="wm_elf328p_UV_Sensor" name="紫外线传感器" colour="20">
+			<block type="wm_elf328p_uv_sensor_get_value"></block>
+		</category>
+	</category>
+
+	<category id="Control_Class" name="操控类" colour="120">
+		<category id="wm_elf328p_Motors" name="按键模块" colour="20">
+			<block type="wm_elf328p_button_on_board"></block>
+			<block type="wm_elf328p_button_rj"></block>
+			<block type="wm_elf328p_button_rj_set_led"></block>
+		</category>
+		<category id="wm_elf328p_Potentiometer_Module" name="电位器模块" colour="20">
+			<block type="wm_elf328p_potentiometer_get_value"></block>
+			<block type="wm_elf328p_sliding_potentiometer_get_value"></block>
+		</category>
+		<category id="wm_elf328p_Joystick_Module" name="全向摇杆模块" colour="20">
+			<block type="wm_elf328p_joystick_module_get_value"></block>
+		</category>
+		<category id="wm_elf328p_Touch_Module" name="触摸传感器" colour="20">
+			<block type="wm_elf328p_touch_sensor_set_mode"></block>
+			<block type="wm_elf328p_touch_sensor_get_value"></block>
+			<block type="wm_elf328p_funny_touch_sensor_get_value"></block>
+		</category>
+	</category>
+
+	<category id="Communication_Class" name="通信类" colour="120">
+		<category id="wm_elf328p_IR_Sensor" name="红外接收传感器" colour="20">
+			<block type="wm_elf328p_ir_loop"></block>
+			<block type="wm_elf328p_ir"></block>
+		</category>
+	</category>
+</category>
